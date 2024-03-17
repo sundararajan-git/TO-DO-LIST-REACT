@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.list {
+  border-radius: 5px;
+  height: 90%;
+  width: 90%;
+  padding: 10px;
+  overflow-y: scroll;
+}
+.list::-webkit-scrollbar {
+  display: none;
+}
+.headers input {
+  padding: 10px;
+  width: 85%;
+  border: none;
+  box-shadow: 0px 0px 7px 7px gainsboro;
+  border-radius: 5px;
+}
+.headers button {
+  margin-left: 3%;
+  width: 12%;
+  padding: 10px;
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.items {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.item {
+  background-color: rgb(213, 210, 210);
+  padding: 15px;
+  border-radius: 5px;
+  align-items: center;
+}
+.btns {
+  margin-left: 5px;
+  float: right;
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
+}
+label {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.checked ~ label {
+  text-decoration-line: line-through;
+}
+.notchecked {
+  text-decoration-line: none;
+}
+@media all and (min-width: 600px) {
+  .list {
+    width: 60%;
+  }
+}
